@@ -3,6 +3,7 @@ class ArtworkSharesController < ApplicationController
   def index
     @artwork_shares = ArtworkShare.all
     render json: @artwork_shares
+    # render json: User.find(params[:user_id]).artworks
   end
 
   def show
